@@ -7,6 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SbIntegrationWithFrontendApplication {
 
 	public static void main(String[] args) {
+		//testing the project scuusss
+		System.out.println("hello");
 		SpringApplication.run(SbIntegrationWithFrontendApplication.class, args);
 	}
 
