@@ -50,4 +50,20 @@ public class StudentRepo {
     public List<Student> showStudent(){
         return studentList.stream().toList();
     }
+
+    public String deleteStudent(String name){
+        String result = "";
+      Iterator<Student> studentIt=  studentList.iterator();
+        while (studentIt.hasNext()){
+           Student std = studentIt.next();
+           if(std.getName().equals(name)){
+                studentIt.remove();
+                result = name+ " Delete successfully";
+           }else {
+               result = name+" Not exited in list";
+           }
+
+        }
+        return result;
+    }
 }
